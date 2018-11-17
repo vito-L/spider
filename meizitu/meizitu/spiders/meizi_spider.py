@@ -49,10 +49,6 @@ class meizituSpider(scrapy.Spider):
 
     def check_login(self,response):
         # 验证登录是否成功
-        #print(response.text)
-        #match_obj = response.text
-        #pixiv_title = re.match('<title>(.+?)</title>',response.text)
-        #print(pixiv_title.group(1))
         if response.url == "https://www.pixiv.net/":
             print("login success")
         else:
