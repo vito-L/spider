@@ -10,6 +10,7 @@ import re
 import json
 import datetime
 # from meizitu.items import MeizituItem
+from ..items import MeizituItem
 
 from scrapy.exceptions import *
 from scrapy.crawler import CrawlerProcess
@@ -60,4 +61,4 @@ class meizituSpider(scrapy.Spider):
             print("login success")
         else:
             print("login false")
-        pass
+
